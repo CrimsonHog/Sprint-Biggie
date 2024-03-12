@@ -31,7 +31,7 @@
 
 # ✳️ Spring '24: full stack team sprint
 
-## User Story ##
+## User Story
 ### As A dev(eloper) :joystick:
 
  **I Want to** setup a full stack app with all the things(node, mongodb, express, etc.) 
