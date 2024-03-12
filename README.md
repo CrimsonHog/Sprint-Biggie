@@ -20,29 +20,26 @@ TO-DO:
 
 486🚀
 
-Dev Lab Mike 486
-✳️ New in Spring '24: full stack videos & one repo to rule them all(?)
 
-User Story (Story Points: 👕 sm-med)
-As A dev(eloper) 👉 use this only here, never again
+✳️ Spring '24: full stack team sprint
 
-I Want to say hello from express
+User Story 
+As A dev(eloper)
+
+I Want to setup a full stack app with all the things(node, mongodb, express, etc.)
 
 So That I can be real cool dev
 
 ==
 
-As A user interested in Node and Express?
+As A user 
+I Want go to post and search recipes without any excess stuff on the page(advertisements and random stories)
 
-I Want go to a url
-
-So That I can see a message from the server.
+So That I can cook and be a great chef
 
 Resources
-Cumbie's Fall 2023 Dev Notes Gist: https://gist.github.com/barrycumbie/f7ea9afd807816813e9593029e3c5dad
-Min Acceptance Criteria
- publish to a url
- transmit a msg from the server
- node running
- express expose it to the web
-Solution Example: https://github.com/barrycumbie/laughing-sniffle
+Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e9593029e3c5dad](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
+Min Criteria
+welcome page
+search bar
+recipes in cards
