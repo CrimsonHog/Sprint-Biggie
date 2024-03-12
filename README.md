@@ -39,6 +39,6 @@ TO-DO:
 ## Resources
 Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e9593029e3c5dad](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
 ## Min Criteria
-[ ] welcome page
-[ ] search bar
-[ ] recipes in cards
+* welcome page
+* search bar
+* recipes in cards
