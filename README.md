@@ -1,24 +1,24 @@
 ----------------------------------------------------------------------------------------------------
  # Members: #
- ### - Ethan Rinke ### 
+ ### - Ethan Rinke  
       - https://github.com/CrimsonHog
       - Enneagram: Investigator
       - Interests: Coding, video games, reading/writing, working out
-### - Brody Coan ###
+### - Brody Coan
       - https://github.com/bcoan2
       - Enneagram: Challenger
       - Interests: video games, golfing, cars, fishin :fish:
-### - Slade Berryman ###
+### - Slade Berryman
       - https://github.com/sladeberryman
+      - Enneagram: 
+      - Interests: 
+### - Group member 4
       - 
-      - 
-### - Group member 4 ###
-      - 
-      - 
-      - 
+      - Enneagram: 
+      - Interests: 
 
 ----------------------------------------------------------------------------------------------------
-## TO-DO: ##
+## TO-DO:
   - Rinke:
       - Get mongoDB setup
       - give everyone the URI = key to access the database
@@ -32,15 +32,15 @@
 # ✳️ Spring '24: full stack team sprint
 
 ## User Story ##
-### As A dev(eloper) :joystick: ###
+### As A dev(eloper) :joystick:
 
  **I Want to** setup a full stack app with all the things(node, mongodb, express, etc.) 
 
- **So That** I can be real cool dev ### 
+ **So That** I can be real cool dev
 
 ==
 
-### As A user ### 
+### As A user
  **I Want to** go to post and search recipes without any excess stuff on the page(advertisements and random stories):poultry_leg::poultry_leg:
 
  **So That** I can cook and be a great chef :man_cook:
