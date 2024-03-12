@@ -4,8 +4,12 @@ Members:
       - https://github.com/CrimsonHog
       - Enneagram: Investigator
       - Interests: Coding, video games, reading/writing, working out
-  - Group member 2
-  - Group member 3
+  - Brody Coan
+      - https://github.com/bcoan2
+      - Enneagram: Challenger
+      - Interests: video games, golfing, cars, fishin :fish:
+  - Slade Berryman
+      - https://github.com/sladeberryman
   - Group member 4
 
 ----------------------------------------------------------------------------------------------------
@@ -23,7 +27,7 @@ TO-DO:
 # ✳️ Spring '24: full stack team sprint
 
 ## User Story ##
-### As A dev(eloper) ###
+### As A dev(eloper) :joystick: ###
 
  **I Want to** setup a full stack app with all the things(node, mongodb, express, etc.) 
 
@@ -32,11 +36,11 @@ TO-DO:
 ==
 
 ### As A user ### 
- **I Want to** go to post and search recipes without any excess stuff on the page(advertisements and random stories)
+ **I Want to** go to post and search recipes without any excess stuff on the page(advertisements and random stories):poultry_leg::poultry_leg:
 
- **So That** I can cook and be a great chef 
+ **So That** I can cook and be a great chef :man_cook:
 
-## Resources
+## Resources :bookmark_tabs:
 Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e9593029e3c5dad](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
 ## Min Criteria
 * welcome page
