@@ -1,16 +1,16 @@
 ----------------------------------------------------------------------------------------------------
-Members:
-  - Ethan Rinke
+ # Members: #
+ ### - Ethan Rinke ### 
       - https://github.com/CrimsonHog
       - Enneagram: Investigator
       - Interests: Coding, video games, reading/writing, working out
-  - Brody Coan
+### - Brody Coan ###
       - https://github.com/bcoan2
       - Enneagram: Challenger
       - Interests: video games, golfing, cars, fishin :fish:
-  - Slade Berryman
+### - Slade Berryman ###
       - https://github.com/sladeberryman
-  - Group member 4
+### - Group member 4 ###
 
 ----------------------------------------------------------------------------------------------------
 TO-DO:
