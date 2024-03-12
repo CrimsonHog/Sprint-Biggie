@@ -10,10 +10,15 @@
       - Interests: video games, golfing, cars, fishin :fish:
 ### - Slade Berryman ###
       - https://github.com/sladeberryman
+      - 
+      - 
 ### - Group member 4 ###
+      - 
+      - 
+      - 
 
 ----------------------------------------------------------------------------------------------------
-TO-DO:
+## TO-DO: ##
   - Rinke:
       - Get mongoDB setup
       - give everyone the URI = key to access the database
