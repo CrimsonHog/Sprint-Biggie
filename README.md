@@ -10,7 +10,7 @@ Members:
 
 ----------------------------------------------------------------------------------------------------
 TO-DO:
-    Rinke:
+  - Rinke:
       - Get mongoDB setup
       - give everyone the URI = key to access the database
 
