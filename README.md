@@ -25,20 +25,20 @@ TO-DO:
 ## User Story ##
 ### As A dev(eloper) ###
 
- I Want to setup a full stack app with all the things(node, mongodb, express, etc.) 
+ **I Want to** setup a full stack app with all the things(node, mongodb, express, etc.) 
 
- So That I can be real cool dev ### 
+ **So That** I can be real cool dev ### 
 
 ==
 
 ### As A user ### 
- I Want go to post and search recipes without any excess stuff on the page(advertisements and random stories)
+ **I Want to** go to post and search recipes without any excess stuff on the page(advertisements and random stories)
 
- So That I can cook and be a great chef 
+ **So That** I can cook and be a great chef 
 
 ## Resources
 Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e9593029e3c5dad](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
 ## Min Criteria
-welcome page
-search bar
-recipes in cards
+[ ] welcome page
+[ ] search bar
+[ ] recipes in cards
