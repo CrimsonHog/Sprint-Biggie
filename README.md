@@ -10,19 +10,12 @@
       - Interests: video games, golfing, cars, fishin :fish:
 ### - Slade Berryman
       - https://github.com/sladeberryman
-      - Enneagram: 
-      - Interests: 
+      - Enneagram: Reformer
+      - Interests: acoustic guitar, tennis, target shooting (compound bow)
 ### - Group member 4
       - 
       - Enneagram: 
       - Interests: 
-
-----------------------------------------------------------------------------------------------------
-## TO-DO:
-  - Rinke:
-      - Get mongoDB setup
-      - give everyone the URI = key to access the database
-
 
 ----------------------------------------------------------------------------------------------------
 
