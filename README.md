@@ -12,10 +12,10 @@
       - https://github.com/sladeberryman
       - Enneagram: Reformer
       - Interests: acoustic guitar, tennis, target shooting (compound bow)
-### - Group member 4
-      - 
-      - Enneagram: 
-      - Interests: 
+### - Ethan Criddle
+      - https://github.com/stalewhitebread
+      - Enneagram: Enthusiast
+      - Interests: Swimming, gaming, gyming it up
 
 ----------------------------------------------------------------------------------------------------
 
