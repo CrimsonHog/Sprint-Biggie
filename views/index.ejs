@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Eazy Eatz</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Eazy Eatz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="text-center mt-4">No Ads, No Stories, Just Eatz.</h1>
+
+    <!-- Search form -->
+    <form class="mb-3" method="GET" action="/">
+      <div class="input-group">
+        <input type="text" class="form-control" name="search" placeholder="Search recipes...">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </form>
+
+    <% if (searchQuery) { %>
+      <h4>Search Results for "<%= searchQuery %>"</h4>
+    <% } %>
+
+    <% if (recipes.length === 0) { %>
+      <p>No recipes found.</p>
+    <% } else { %>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <% recipes.forEach(function(recipe) { %>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><%= recipe.recipeName %></h5>
+                <p class="card-text">Ingredients: <%= recipe.ingredients.length %></p>
+                <p class="card-text">Steps: <%= recipe.steps.length %></p>
+                <p class="card-text">Time: <%= recipe.time %></p>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    <% } %>
+  </div>
+
+  <footer class="bg-light text-center py-3">
+    <div class="container">
+      <p class="m-0">Eazy Eatz &copy; 2024</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
