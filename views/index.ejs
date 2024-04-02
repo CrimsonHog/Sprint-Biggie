@@ -46,14 +46,16 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <% recipes.forEach(function(recipe) { %>
           <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title"><%= recipe.recipeName %></h5>
-                <p class="card-text">Ingredients: <%= recipe.ingredients.length %></p>
-                <p class="card-text">Steps: <%= recipe.steps.length %></p>
-                <p class="card-text">Time: <%= recipe.time %></p>
+            <a href="/read?recipe=<%= recipe.recipeID %>" class="text-decoration-none text-dark">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><%= recipe.recipeName %></h5>
+                  <p class="card-text">Ingredients: <%= recipe.ingredients.length %></p>
+                  <p class="card-text">Steps: <%= recipe.steps.length %></p>
+                  <p class="card-text">Time: <%= recipe.time %></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         <% }) %>
       </div>
