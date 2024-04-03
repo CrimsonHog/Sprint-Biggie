@@ -24,6 +24,13 @@ Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e
 * search bar
 * recipes in cards
 
+
+### RENDERS
+
+Main Render: 
+https://eazyeatz.onrender.com/
+Dev Render: 
+https://development-eazyeatz.onrender.com/
 ----------------------------------------------------------------------------------------------------
  # Members: #
  ### - Ethan Rinke  
