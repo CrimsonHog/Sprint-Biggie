@@ -1,5 +1,13 @@
 ## [Click here to view project plan](https://github.com/users/CrimsonHog/projects/1/views/1 "Project Plan")
 
+## RENDERS
+
+### Main Render: 
+https://eazyeatz.onrender.com/
+
+### Dev Render: 
+https://development-eazyeatz.onrender.com/
+
 
 # ✳️ Spring '24: full stack team sprint
 
@@ -25,13 +33,7 @@ Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e
 * recipes in cards
 
 
-### RENDERS
 
-Main Render: 
-https://eazyeatz.onrender.com/
-
-Dev Render: 
-https://development-eazyeatz.onrender.com/
 
 ----------------------------------------------------------------------------------------------------
  # Members: #
