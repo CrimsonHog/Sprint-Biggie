@@ -4,7 +4,7 @@ https://eazyeatz.onrender.com/
 ### Dev Render: 
 https://development-eazyeatz.onrender.com/
 
-# ✳️ Spring '24: full stack team sprint
+# ✳️ Spring '24: Eazy Eatz
 
 ## User Story
 ### As A dev(eloper) :joystick:
@@ -21,13 +21,13 @@ https://development-eazyeatz.onrender.com/
  **So That** I can cook and be a great chef :man_cook:
 
 ## Resources :bookmark_tabs:
-Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e9593029e3c5dad](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
+Full repo for Eazy Eatz [can be found here](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
 ## Min Criteria
 * welcome page
 * search bar
 * recipes in cards
 
- # Members: #
+ # Creators: #
  ### - Ethan Rinke  
       - https://github.com/CrimsonHog
       - Enneagram: Investigator
