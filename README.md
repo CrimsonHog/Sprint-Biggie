@@ -1,5 +1,3 @@
-## [Click here to view project plan](https://github.com/users/CrimsonHog/projects/1/views/1 "Project Plan")
-
 # ✳️ Spring '24: full stack team sprint
 
 ## User Story
