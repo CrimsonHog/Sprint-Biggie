@@ -33,13 +33,19 @@
         <div class="mt-4">
           <h5>Ingredients:</h5>
           <ul class="list-group">
-            <li class="list-group-item list-group-item-action"><%= recipe.ingredients %></li>
+            <!--  print each ingredient in the array -->
+            <% recipe.ingredients.forEach(function(ingredient) { %>
+              <li class="list-group-item list-group-item-action"><%= ingredient %></li>
+            <% }) %>
           </ul>
         </div>
         <div class="mt-4">
           <h5>Steps:</h5>
-          <ol class="list-group">
-            <li class="list-group-item list-group-item-action"><%= recipe.steps %></li>
+          <ol class="list-group list-group-numbered">
+            <!--  print each ingredient in the array -->
+            <% recipe.steps.forEach(function(step) { %>
+              <li class="list-group-item list-group-item-action"><%= step %></li>
+            <% }) %>
           </ol>
         </div>
       </div>
