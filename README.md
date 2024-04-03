@@ -1,6 +1,3 @@
-
-## RENDERS
-
 ### Main Render: 
 https://eazyeatz.onrender.com/
 
