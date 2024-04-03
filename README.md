@@ -1,3 +1,12 @@
+
+## RENDERS
+
+### Main Render: 
+https://eazyeatz.onrender.com/
+
+### Dev Render: 
+https://development-eazyeatz.onrender.com/
+
 # ✳️ Spring '24: full stack team sprint
 
 ## User Story
@@ -20,7 +29,7 @@ Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e
 * welcome page
 * search bar
 * recipes in cards
-----------------------------------------------------------------------------------------------------
+
  # Members: #
  ### - Ethan Rinke  
       - https://github.com/CrimsonHog
