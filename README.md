@@ -1,24 +1,4 @@
 ## [Click here to view project plan](https://github.com/users/CrimsonHog/projects/1/views/1 "Project Plan")
-----------------------------------------------------------------------------------------------------
- # Members: #
- ### - Ethan Rinke  
-      - https://github.com/CrimsonHog
-      - Enneagram: Investigator
-      - Interests: Coding, video games, reading/writing, working out
-### - Brody Coan
-      - https://github.com/bcoan2
-      - Enneagram: Challenger
-      - Interests: video games, golfing, cars, fishin :fish:
-### - Slade Berryman
-      - https://github.com/sladeberryman
-      - Enneagram: Reformer
-      - Interests: acoustic guitar, tennis, target shooting (compound bow)
-### - Ethan Criddle
-      - https://github.com/stalewhitebread
-      - Enneagram: Enthusiast
-      - Interests: Swimming, gaming, gyming it up
-
-----------------------------------------------------------------------------------------------------
 
 # ✳️ Spring '24: full stack team sprint
 
@@ -42,3 +22,23 @@ Repo for Sprint-Biggie : [https://gist.github.com/barrycumbie/f7ea9afd807816813e
 * welcome page
 * search bar
 * recipes in cards
+----------------------------------------------------------------------------------------------------
+ # Members: #
+ ### - Ethan Rinke  
+      - https://github.com/CrimsonHog
+      - Enneagram: Investigator
+      - Interests: Coding, video games, reading/writing, working out
+### - Brody Coan
+      - https://github.com/bcoan2
+      - Enneagram: Challenger
+      - Interests: video games, golfing, cars, fishin :fish:
+### - Slade Berryman
+      - https://github.com/sladeberryman
+      - Enneagram: Reformer
+      - Interests: acoustic guitar, tennis, target shooting (compound bow)
+### - Ethan Criddle
+      - https://github.com/stalewhitebread
+      - Enneagram: Enthusiast
+      - Interests: Swimming, gaming, gyming it up
+
+----------------------------------------------------------------------------------------------------
