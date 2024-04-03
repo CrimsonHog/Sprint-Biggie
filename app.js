@@ -42,13 +42,14 @@ app.get('/', async (req, res) => {
 
 // read a single recipe
 app.get('/read', async (req, res) => {
-  const recipeID = req.query.recipe;
+  //const recipeID = req.query.recipe;
+  const recipeID = parseInt(req.query.recipe);
 
   try {
     await client.connect();
     const dbConn = client.db("SPRINT").collection("Recipes");
 
-    // Retrieve the recipe with the specified recipeID
+    // Retrieve the recipe with the specified recipeID    
     const recipe = await dbConn.findOne({ recipeID });
 
     if (!recipe) {
