@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Eazy Eatz</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <script src="/scripts/script.js"></script>
 </head>
 
 <body>
@@ -19,6 +20,11 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addRecipeModal">
+              Create Recipe
+            </button>
           </li>
         </ul>
       </div>
@@ -46,7 +52,7 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <% recipes.forEach(function(recipe) { %>
           <div class="col">
-            <a href="/read?recipe=<%= recipe.recipeID %>" class="text-decoration-none text-dark">
+            <a href="/read?recipe=<%= recipe._id %>" class="text-decoration-none text-dark">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title"><%= recipe.recipeName %></h5>
@@ -60,6 +66,49 @@
         <% }) %>
       </div>
     <% } %>
+
+    <!-- Modal for adding a recipe -->
+    <div class="modal fade" id="addRecipeModal" tabindex="-1" aria-labelledby="addRecipeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addRecipeModalLabel">New Recipe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="/create" method="POST">
+              <div class="mb-3">
+                <label for="recipeName" class="form-label">Recipe Name</label>
+                <input type="text" class="form-control" id="recipeName" name="recipeName" required>
+              </div>
+              <div class="mb-3">
+                <label for="authorName" class="form-label">Author Name</label>
+                <input type="text" class="form-control" id="authorName" name="authorName" required>
+              </div>
+              <div class="mb-3">
+                <label for="time" class="form-label">Time</label>
+                <input type="text" class="form-control" id="time" name="time" required>
+              </div>
+              <div class="mb-3">
+                <label for="ingredients" class="form-label">Ingredients</label>
+                <div id="ingredientsContainer">
+                  <input type="text" class="form-control mb-2" name="ingredients[]" required>
+                </div>
+                <button type="button" class="btn btn-warning mt-2" id="addIngredientBtn">Add Ingredient</button>
+              </div>
+              <div class="mb-3">
+                <label for="steps" class="form-label">Steps</label>
+                <div id="stepsContainer">
+                  <textarea class="form-control form-control-sm mb-2" name="steps[]" rows="3" required></textarea>
+                </div>
+                <button type="button" class="btn btn-warning mt-2" id="addStepBtn">Add Step</button>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="bg-light text-center py-3">
