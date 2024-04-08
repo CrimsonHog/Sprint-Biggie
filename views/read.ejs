@@ -17,8 +17,26 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="actionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Actions
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="actionsDropdown">
+              <li>
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete Recipe</a>
+              </li>
+              <li><a class="dropdown-item" href="#" onclick="">Edit Recipe</a></li>
+            </ul>
+          </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/">Home</a></li>
+              <li><a class="dropdown-item" href="https://crimsonhog.github.io/Sprint-Biggie/" target="_blank">The Mission</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">Creators</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -48,6 +66,28 @@
               <li class="list-group-item list-group-item-action"><%= step %></li>
             <% }) %>
           </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Recipe Modal -->
+  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to delete this recipe?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <form method="POST" action="/delete">
+            <input type="hidden" name="recipe" value="<%= recipe._id %>">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
         </div>
       </div>
     </div>
