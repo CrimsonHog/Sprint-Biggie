@@ -80,7 +80,6 @@ app.post('/create', async (req, res) => {
 
 // read a single recipe
 app.get('/read', async (req, res) => {
-  //const recipeID = req.query.recipe;
   const recipeID = new ObjectId(req.query.recipe);
 
   try {
@@ -96,6 +95,32 @@ app.get('/read', async (req, res) => {
     }
 
     res.render('read', { recipe });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+// update recipe
+
+
+// delete recipe
+app.post('/delete', async (req, res) => {
+  const recipeID = new ObjectId(req.body.recipe);
+
+  try {
+    await client.connect();
+    const dbConn = client.db("SPRINT").collection("Recipes");
+
+    // del recipe with the specified recipeID
+    const result = await dbConn.deleteOne({ _id: recipeID });
+
+    if (result.deletedCount === 0) {
+      // if for some reason recipe is not found
+      return res.status(404).send('Recipe not found');
+    }
+
+    res.redirect('/');
   } catch (error) {
     console.error(error);
     res.status(500).send('Internal Server Error');
