@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Eazy Eatz</title>
+  <title>EazyEatz</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
   <script src="/scripts/index.js"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="/">Eazy Eatz</a>
+      <a class="navbar-brand" href="/">EazyEatz</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,9 +27,8 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Menu
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="https://crimsonhog.github.io/Sprint-Biggie/" target="_blank">The Mission</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Creators</a></li>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://crimsonhog.github.io/Sprint-Biggie/" target="_blank">About</a></li>
             </ul>
           </li>
         </ul>
@@ -100,16 +99,16 @@
                 <div id="ingredientsContainer">
                   <input type="text" class="form-control mb-2" name="ingredients[]" required>
                 </div>
-                <button type="button" class="btn btn-warning mt-2" id="addIngredientBtn">Add Ingredient</button>
+                <button type="button" class="btn btn-secondary mt-2" id="addIngredientBtn">Add Ingredient</button>
               </div>
               <div class="mb-3">
                 <label for="steps" class="form-label">Steps</label>
                 <div id="stepsContainer">
                   <textarea class="form-control form-control-sm mb-2" name="steps[]" rows="3" required></textarea>
                 </div>
-                <button type="button" class="btn btn-warning mt-2" id="addStepBtn">Add Step</button>
+                <button type="button" class="btn btn-secondary mt-2" id="addStepBtn">Add Step</button>
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
@@ -117,9 +116,9 @@
     </div>
   </div>
 
-  <footer class="bg-light text-center py-3">
+  <footer class="bg-light text-center py-3 mt-auto">
     <div class="container">
-      <p class="m-0">Eazy Eatz &copy; 2024</p>
+      <p class="m-0">EazyEatz &copy; 2024</p>
     </div>
   </footer>
 

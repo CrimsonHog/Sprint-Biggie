@@ -8,7 +8,7 @@
   <script src="/scripts/read.js"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="/">Eazy Eatz</a>
@@ -18,17 +18,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
             <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#editRecipeModal">
               Edit Recipe
             </button>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Menu
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/">Home</a></li>
-              <li><a class="dropdown-item" href="https://crimsonhog.github.io/Sprint-Biggie/" target="_blank">The Mission</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Creators</a></li>
+              <li><a class="dropdown-item" href="https://crimsonhog.github.io/Sprint-Biggie/" target="_blank">About</a></li>
             </ul>
           </li>
         </ul>
@@ -94,7 +95,7 @@
                   <input type="text" class="form-control mb-2" name="ingredients[]" value="<%= ingredient %>">
                 <% }) %>
               </div>
-              <button type="button" class="btn btn-warning mt-2" id="addIngredientBtn">Add Ingredient</button>
+              <button type="button" class="btn btn-secondary mt-2" id="addIngredientBtn">Add Ingredient</button>
             </div>
             <div class="mb-3">
               <label for="steps" class="form-label">Steps</label>
@@ -103,41 +104,17 @@
                   <textarea class="form-control form-control-sm mb-2" name="steps[]" rows="3" ><%= step %></textarea>
                 <% }) %>
               </div>
-              <button type="button" class="btn btn-warning mt-2" id="addStepBtn">Add Step</button>
+              <button type="button" class="btn btn-secondary mt-2" id="addStepBtn">Add Step</button>
             </div>
-            <button type="submit" class="btn btn-success">Save Changes</button>
-            <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal">
-              Delete Recipe
-            </button>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+            <button class="btn btn-danger" id="deleteBtn" data-recipe-id="<%= recipe._id %>">Delete</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Delete Recipe Modal -->
-  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Are you sure you want to delete this recipe?</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <form method="POST" action="/delete">
-            <input type="hidden" name="recipe" value="<%= recipe._id %>">
-            <button type="submit" class="btn btn-danger">Delete</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="bg-light text-center py-3">
+  <footer class="bg-light text-center py-3 mt-auto">
     <div class="container">
       <p class="m-0">Eazy Eatz &copy; 2024</p>
     </div>

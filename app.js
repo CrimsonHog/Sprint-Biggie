@@ -31,9 +31,16 @@ app.get('/', async (req, res) => {
 
     if (searchQuery) {
       const regexQuery = { $regex: searchQuery, $options: 'i' };
-      filteredRecipes = await dbConn.find({ recipeName: regexQuery }).toArray();
+      filteredRecipes = await dbConn.find({
+        $or: [
+          { recipeName: regexQuery },
+          { author: regexQuery },
+          { ingredients: regexQuery },
+          { steps: regexQuery }
+        ]
+      }).sort({ recipeName: 1 }).toArray();
     } else {
-      filteredRecipes = await dbConn.find().toArray();
+      filteredRecipes = await dbConn.find().sort({ recipeName: 1 }).toArray();
     }
 
     res.render('index', { recipes: filteredRecipes, searchQuery: searchQuery });
@@ -138,18 +145,18 @@ app.post('/update', async (req, res) => {
 });
 
 // delete recipe
-app.post('/delete', async (req, res) => {
-  const recipeID = new ObjectId(req.body.recipe);
+app.get('/delete', async (req, res) => {
+  const recipeID = new ObjectId(req.query.recipe);
 
   try {
     await client.connect();
     const dbConn = client.db("SPRINT").collection("Recipes");
 
-    // del recipe with the specified recipeID
+    // Delete recipe with the specified recipeID
     const result = await dbConn.deleteOne({ _id: recipeID });
 
     if (result.deletedCount === 0) {
-      // if for some reason recipe is not found
+      // If for some reason recipe is not found
       return res.status(404).send('Recipe not found');
     }
 
