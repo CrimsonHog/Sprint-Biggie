@@ -102,7 +102,40 @@ app.get('/read', async (req, res) => {
 });
 
 // update recipe
+app.post('/update', async (req, res) => {
+  try {
+    await client.connect();
+    const collection = client.db("SPRINT").collection("Recipes");
+    const recipeId = req.body.recipe; // Get the recipe ID from the hidden input field in the form
 
+    const recipeName = req.body.recipeName;
+    const author = req.body.authorName;
+    const time = req.body.time;
+    const ingredients = req.body.ingredients;
+    const steps = req.body.steps;
+
+    // Filter out empty steps and ingredients
+    const filteredIngredients = ingredients.filter((ingredient) => ingredient !== '');
+    const filteredSteps = steps.filter((step) => step !== '');
+
+    const updatedRecipe = {
+      recipeName,
+      ingredients: filteredIngredients,
+      steps: filteredSteps,
+      time,
+      author,
+    };
+
+    await collection.updateOne({ _id: new ObjectId(recipeId) }, { $set: updatedRecipe });
+    console.log("Updated recipe:", recipeId);
+
+    res.redirect(`/read?recipe=${recipeId}`);
+  } catch (error) {
+    console.log("Error updating recipe:", error);
+  } finally {
+    client.close();
+  }
+});
 
 // delete recipe
 app.post('/delete', async (req, res) => {
