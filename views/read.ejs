@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Eazy Eatz</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <script src="/scripts/read.js"></script>
 </head>
 
 <body>
@@ -17,17 +18,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="actionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              Actions
+            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#editRecipeModal">
+              Edit Recipe
             </button>
-            <ul class="dropdown-menu" aria-labelledby="actionsDropdown">
-              <li>
-                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete Recipe</a>
-              </li>
-              <li><a class="dropdown-item" href="#" onclick="">Edit Recipe</a></li>
-            </ul>
-          </div>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Menu
@@ -71,9 +64,60 @@
     </div>
   </div>
 
+  <!-- Edit Recipe Modal -->
+  <div class="modal fade" id="editRecipeModal" tabindex="-1" aria-labelledby="editRecipeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editRecipeModalLabel">New Recipe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="/update" method="POST">
+            <input type="hidden" name="recipe" value="<%= recipe._id %>">
+            <div class="mb-3">
+              <label for="recipeName" class="form-label">Recipe Name</label>
+              <input type="text" class="form-control" id="recipeName" name="recipeName" value="<%= recipe.recipeName %>" required>
+            </div>
+            <div class="mb-3">
+              <label for="authorName" class="form-label">Author Name</label>
+              <input type="text" class="form-control" id="authorName" name="authorName" value="<%= recipe.author %>" required>
+            </div>
+            <div class="mb-3">
+              <label for="time" class="form-label">Time</label>
+              <input type="text" class="form-control" id="time" name="time" value="<%= recipe.time %>" required>
+            </div>
+            <div class="mb-3">
+              <label for="ingredients" class="form-label">Ingredients</label>
+              <div id="ingredientsContainer">
+                <% recipe.ingredients.forEach(function(ingredient) { %>
+                  <input type="text" class="form-control mb-2" name="ingredients[]" value="<%= ingredient %>">
+                <% }) %>
+              </div>
+              <button type="button" class="btn btn-warning mt-2" id="addIngredientBtn">Add Ingredient</button>
+            </div>
+            <div class="mb-3">
+              <label for="steps" class="form-label">Steps</label>
+              <div id="stepsContainer">
+                <% recipe.steps.forEach(function(step) { %>
+                  <textarea class="form-control form-control-sm mb-2" name="steps[]" rows="3" ><%= step %></textarea>
+                <% }) %>
+              </div>
+              <button type="button" class="btn btn-warning mt-2" id="addStepBtn">Add Step</button>
+            </div>
+            <button type="submit" class="btn btn-success">Save Changes</button>
+            <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal">
+              Delete Recipe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Delete Recipe Modal -->
   <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
