@@ -22,4 +22,17 @@ document.addEventListener("DOMContentLoaded", function() {
       stepTextArea.required = false;
       stepsContainer.appendChild(stepTextArea);
     });
+
+    // for deleting recipes
+    document.getElementById('deleteBtn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action of the anchor tag
+      
+        const recipeId = this.getAttribute('data-recipe-id');
+        const confirmDelete = confirm('Are you sure you want to delete this recipe? This action cannot be undone.');
+        
+        if (confirmDelete) {
+          window.location.href = '/delete?recipe=' + recipeId;
+        }
+      });
+
   });
