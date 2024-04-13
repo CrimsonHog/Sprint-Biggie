@@ -36,8 +36,8 @@
 
 # Creators:
 
-### - Ethan Rinke  
-      - [CrimsonHog on GitHub](https://github.com/CrimsonHog)
+### - Ethan Rinke  AKA [CrimsonHog](https://github.com/CrimsonHog)
+      - https://github.com/CrimsonHog
       - Enneagram: Investigator
       - Interests: Coding, video games, reading/writing, working out
 
