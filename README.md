@@ -36,22 +36,22 @@
 
 # Creators:
 
-### - Ethan Rinke | AKA [CrimsonHog on Github](https://github.com/CrimsonHog)
+### - Ethan Rinke | [CrimsonHog on Github](https://github.com/CrimsonHog)
       - Enneagram: Investigator
       - Interests: Coding, video games, reading/writing, working out
 
       
-### - Brody Coan | AKA [bcoan2 on GitHub](https://github.com/bcoan2)
+### - Brody Coan | [bcoan2 on GitHub](https://github.com/bcoan2)
       - Enneagram: Challenger
       - Interests: video games, golfing, cars, fishin :fish:
 
       
-### - Slade Berryman | AKA [sladeberryman on GitHub](https://github.com/sladeberryman)
+### - Slade Berryman | [sladeberryman on GitHub](https://github.com/sladeberryman)
       - Enneagram: Reformer
       - Interests: acoustic guitar, tennis, target shooting (compound bow)
 
       
-### - Ethan Criddle | AKA (bestnickname) [stalewhitebread on GitHub](https://github.com/stalewhitebread)
+### - Ethan Criddle | (best username award 🏆) [stalewhitebread on GitHub](https://github.com/stalewhitebread)
       - Enneagram: Enthusiast
       - Interests: Swimming, gaming, gyming it up
 
