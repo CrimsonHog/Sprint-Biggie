@@ -1,9 +1,3 @@
-### Main Render: 
-https://eazyeatz.onrender.com/
-
-### Dev Render: 
-https://development-eazyeatz.onrender.com/
-
 # ✳️ Spring '24: Eazy Eatz
 
 ## User Story
@@ -27,19 +21,32 @@ Full repo for Eazy Eatz [can be found here](https://github.com/CrimsonHog/Sprint
 * search bar
 * recipes in cards
 
+### Main Render: 
+https://eazyeatz.onrender.com/
+
+### Dev Render: 
+https://development-eazyeatz.onrender.com/
+
+
  # Creators: #
  ### - Ethan Rinke  
       - https://github.com/CrimsonHog
       - Enneagram: Investigator
       - Interests: Coding, video games, reading/writing, working out
+
+      
 ### - Brody Coan
       - https://github.com/bcoan2
       - Enneagram: Challenger
       - Interests: video games, golfing, cars, fishin :fish:
+
+      
 ### - Slade Berryman
       - https://github.com/sladeberryman
       - Enneagram: Reformer
       - Interests: acoustic guitar, tennis, target shooting (compound bow)
+
+      
 ### - Ethan Criddle
       - https://github.com/stalewhitebread
       - Enneagram: Enthusiast
