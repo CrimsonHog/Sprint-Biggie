@@ -27,8 +27,7 @@ https://eazyeatz.onrender.com/
 ### Dev Render: 
 https://development-eazyeatz.onrender.com/
 
-
- # Creators: #
+# Creators: #
 
 ### - Ethan Rinke  
       - https://github.com/CrimsonHog
