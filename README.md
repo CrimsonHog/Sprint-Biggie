@@ -43,7 +43,7 @@
       
 ### - Brody Coan | [bcoan2 on GitHub](https://github.com/bcoan2)
       - Enneagram: Challenger
-      - Interests: video games, golfing, cars, fishin :fish:
+      - Interests: video games, golfing, cars, fishin
 
       
 ### - Slade Berryman | [sladeberryman on GitHub](https://github.com/sladeberryman)
