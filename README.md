@@ -30,8 +30,7 @@ https://development-eazyeatz.onrender.com/
 
  # Creators: #
 
- 
- ### - Ethan Rinke  
+### - Ethan Rinke  
       - https://github.com/CrimsonHog
       - Enneagram: Investigator
       - Interests: Coding, video games, reading/writing, working out
