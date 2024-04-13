@@ -1,7 +1,7 @@
 # ✳️ Spring '24: Eazy Eatz
 
 ## User Story
-### As A dev(eloper) :joystick:
+### As A dev(eloper) 🕹️
 
  **I Want to** setup a full stack app with all the things(node, mongodb, express, etc.) 
 
@@ -10,9 +10,9 @@
 ==
 
 ### As A user
- **I Want to** go to post and search recipes on a page that's not an information overload(advertisements and random stories) :poultry_leg: :poultry_leg:
+ **I Want to** go to post and search recipes on a page that's not an information overload(advertisements and random stories) 🍗 🍗
 
- **So That** I can cook and be a great chef :man_cook:
+ **So That** I can cook and be a great chef 👨‍🍳
 
 
 ## Min Criteria
@@ -22,7 +22,7 @@
 * recipes in cards
 
 
-## Resources :bookmark_tabs:
+## Resources 📑
 
 ### Full repo for Eazy Eatz :
 [Github Repo](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
@@ -37,7 +37,7 @@
 # Creators:
 
 ### - Ethan Rinke  
-      - https://github.com/CrimsonHog
+      - [CrimsonHog on GitHub](https://github.com/CrimsonHog)
       - Enneagram: Investigator
       - Interests: Coding, video games, reading/writing, working out
 
