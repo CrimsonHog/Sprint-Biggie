@@ -14,18 +14,24 @@
 
  **So That** I can cook and be a great chef :man_cook:
 
-## Resources :bookmark_tabs:
-Full repo for Eazy Eatz [can be found here](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
+
 ## Min Criteria
 * welcome page
 * search bar
 * recipes in cards
 
+
+## Resources :bookmark_tabs:
+
+### Full repo for Eazy Eatz :
+[Github Repo](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
+
 ### Main Render: 
-https://eazyeatz.onrender.com/
+[can be found here](https://eazyeatz.onrender.com/)
 
 ### Dev Render: 
-https://development-eazyeatz.onrender.com/
+[can be found here](https://development-eazyeatz.onrender.com/)
+
 
 # Creators:
 
