@@ -17,6 +17,7 @@
 
 ## Min Criteria
 * welcome page
+* CRUD
 * search bar
 * recipes in cards
 
