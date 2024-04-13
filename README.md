@@ -10,7 +10,7 @@
 ==
 
 ### As A user
- **I Want to** go to post and search recipes without any excess stuff on the page(advertisements and random stories) :poultry_leg: :poultry_leg:
+ **I Want to** go to post and search recipes on a page that's not an information overload(advertisements and random stories) :poultry_leg: :poultry_leg:
 
  **So That** I can cook and be a great chef :man_cook:
 
