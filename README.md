@@ -24,14 +24,14 @@
 
 ## Resources 📑
 
-### Full repo for Eazy Eatz :
+### Full repo for Eazy Eatz:
 [Github Repo](https://github.com/CrimsonHog/Sprint-Biggie/tree/main)
 
 ### Main Render: 
-[can be found here](https://eazyeatz.onrender.com/)
+[Can be found here](https://eazyeatz.onrender.com/)
 
 ### Dev Render: 
-[can be found here](https://development-eazyeatz.onrender.com/)
+[Can be found here](https://development-eazyeatz.onrender.com/)
 
 
 # Creators:
