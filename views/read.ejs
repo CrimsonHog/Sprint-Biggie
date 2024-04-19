@@ -39,29 +39,35 @@
     </div>
   </nav>
 
-  <div class="container mt-4">
+  <div class="container mt-4 mb-3">
     <div class="row">
       <div class="col-md-6 offset-md-3">
-        <h1><%= recipe.recipeName %></h1>
-        <p><%= recipe.author %></p>
-        <p><%= recipe.time %></p>
+        <h1 class="text-center mb-4"><%= recipe.recipeName %></h1>
+        <p class="lead text-center"><%= recipe.author %></p>
+        <p class="text-center"><i class="bi bi-clock"></i> <%= recipe.time %></p>
         <div class="mt-4">
           <h5>Ingredients:</h5>
           <ul class="list-group">
-            <!--  print each ingredient in the array -->
+            <!-- Print each ingredient in the array -->
             <% recipe.ingredients.forEach(function(ingredient) { %>
-              <li class="list-group-item list-group-item-action"><%= ingredient %></li>
+              <li class="list-group-item d-flex align-items-center">
+                <%= ingredient %>
+                <input type="checkbox" class="form-check-input ms-auto">
+              </li>
             <% }) %>
           </ul>
         </div>
         <div class="mt-4">
           <h5>Steps:</h5>
-          <ol class="list-group list-group-numbered">
-            <!--  print each ingredient in the array -->
+          <ul class="list-group">
+            <!-- Print each step in the array -->
             <% recipe.steps.forEach(function(step) { %>
-              <li class="list-group-item list-group-item-action"><%= step %></li>
+              <li class="list-group-item d-flex align-items-center">
+                <%= step %>
+                <input type="checkbox" class="form-check-input ms-auto">
+              </li>
             <% }) %>
-          </ol>
+          </ul>
         </div>
       </div>
     </div>
