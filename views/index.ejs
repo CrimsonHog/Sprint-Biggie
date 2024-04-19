@@ -38,7 +38,7 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container mb-5">
     <h1 class="text-center mt-4">No Ads, No Stories, Just Eatz.</h1>
 
     <!-- Search form -->
@@ -61,11 +61,13 @@
           <div class="col">
             <a href="/read?recipe=<%= recipe._id %>" class="text-decoration-none text-dark">
               <div class="card">
+                <div class="card-header d-flex align-items-center justify-content-center">
+                  <h4 class="card-title fw-bold text-center"><%= recipe.recipeName %></h4>
+                </div>
                 <div class="card-body d-flex flex-column align-items-center">
-                  <h3 class="card-title fw-bold mb-3 text-center"><%= recipe.recipeName %></h5>
-                  <p class="card-text">Ingredients: <%= recipe.ingredients.length %></p>
-                  <p class="card-text">Steps: <%= recipe.steps.length %></p>
-                  <p class="card-text">Time: <%= recipe.time %></p>
+                  <p class="card-text">Ingredients: <strong><%= recipe.ingredients.length %></strong></p>
+                  <p class="card-text">Steps: <strong><%= recipe.steps.length %></strong></p>
+                  <p class="card-text">Time: <strong><%= recipe.time %></strong></p>
                 </div>
               </div>
             </a>
