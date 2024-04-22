@@ -1,0 +1,82 @@
+body {
+  font-family: Andale Mono, monospace;
+  background-color: gray;
+}
+
+/*header*/
+h1 {
+  color: black;
+  padding: 10px 20px;
+}
+
+/*search bar*/
+.input-group input[type="text"] {
+  border-radius: 5px;
+  border: 1px solid black; 
+  padding: 10px;
+}
+
+/*search button*/
+.input-group button[type="submit"] {
+  background-color: #deb887; 
+  color: #fff;
+  border-color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.input-group button[type="submit"]:hover {
+  background-color: #382915d7; 
+}
+
+/*card*/
+.card {
+  background-color: #fff;
+  border: 1px solid black; 
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 0 10px #deb887;
+}
+.card-header {
+  background-color: rgb(119, 118, 118);
+  color: black;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-title {
+  margin: 0;
+  font-size: 20px;
+}
+.card-text {
+  color: black;
+}
+
+/*create recipe/edit*/
+.btn-secondary[data-bs-toggle="modal"]{
+  background-color: #cea877 !important; 
+  border: none;
+}
+.btn-secondary[data-bs-toggle="modal"]:hover {
+  background-color: #382915d7 !important;
+  border: none; 
+}
+
+/*others*/
+.btn-primary {
+  background-color: burlywood; 
+  border-color: black;
+}
+.btn-primary:hover {
+  background-color: #382915d7;
+  border-color: black; 
+}
+
+/*step sheet*/
+.container input[type="checkbox"] {
+  background-color: #f8cf98;
+  border-color: #f8cf98;
+}
