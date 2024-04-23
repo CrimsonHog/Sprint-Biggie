@@ -1,6 +1,6 @@
 body {
   font-family: Andale Mono, monospace;
-  background-color: gray;
+  background-color: #d3d3d3;
 }
 
 /*header*/
@@ -41,8 +41,7 @@ h1 {
   box-shadow: 0 0 10px #deb887;
 }
 .card-header {
-  background-color: rgb(119, 118, 118);
-  color: black;
+  font-weight: bold;
   padding: 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -76,7 +75,7 @@ h1 {
 }
 
 /*step sheet*/
-.container input[type="checkbox"] {
+.container input[type="checkbox"]:checked {
   background-color: #f8cf98;
   border-color: #f8cf98;
 }

@@ -7,7 +7,7 @@
   <link rel="icon" href="/imgs/ezblack.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
   <script src="/scripts/index.js"></script>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -40,7 +40,7 @@
   </nav>
 
   <div class="container mb-5">
-    <h1 class="text-center mt-4">No Ads, No Stories, Just Eatz.</h1>
+    <h1 class="text-center mt-4 fw-bold">No Ads, No Stories, Just Eatz.</h1>
 
     <!-- Search form -->
     <form class="mb-3" method="GET" action="/">
@@ -62,8 +62,8 @@
           <div class="col">
             <a href="/read?recipe=<%= recipe._id %>" class="text-decoration-none text-dark">
               <div class="card">
-                <div class="card-header d-flex align-items-center justify-content-center">
-                  <h4 class="card-title fw-bold text-center"><%= recipe.recipeName %></h4>
+                <div class="card-header d-flex align-items-center justify-content-center bg-dark">
+                  <h4 class="card-title fw-bold text-center text-white"><%= recipe.recipeName %></h4>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center">
                   <p class="card-text">Ingredients: <strong><%= recipe.ingredients.length %></strong></p>
