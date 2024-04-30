@@ -20,6 +20,7 @@
 * CRUD
 * search bar
 * recipes in cards
+* [better than this](https://www.foodiecrush.com/blue-cheese-wedge-salad-recipe/)
 
 
 ## Resources 📑
